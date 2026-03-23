@@ -33,3 +33,6 @@ def recommend_for_user(user_row, df, encoder, scaler, property_vectors, categori
     temp_df = temp_df[temp_df['price_per_day'] <= u_budget]
 
     return temp_df.sort_values(by='similarity', ascending=False).head(top_n)
+
+
+
